@@ -1,3 +1,5 @@
+@import "Navbar.module.css";
+@import "TimeBracketButton.module.css";
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -8,7 +10,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-
+  
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
     #16abff33 0deg,
@@ -93,15 +95,44 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    font-family: "GothamBold";
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
+.flex{
+  display: flex;
+}
+.overflow-x-scroll{
+ overflow-x: scroll;
+}
+.overflow-x-scroll::-webkit-scrollbar{
+  display: none;
+}
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+}
+@font-face {
+  font-family: "GothamLight";   /*Can be any text*/
+  src: local("GothamLight"),
+    url("../Fonts/Figtree/Figtree-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GothamItalic";   /*Can be any text*/
+  src: local("Gotham"),
+    url("../Fonts/Figtree/Figtree-Italic-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GothamBold";   /*Can be any text*/
+  src: local("GothamBold"),
+    url("../Fonts/Figtree/static/Figtree-Bold.ttf") format("truetype");
+}
+.App{
+  
+  background: #F7CF47;
 }

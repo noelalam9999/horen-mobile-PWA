@@ -1,0 +1,9 @@
+.menu-button{
+    max-width: 10vw;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 2vw 3vh 2vw;
+}
