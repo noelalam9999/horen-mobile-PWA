@@ -1,0 +1,15 @@
+.nav-bottom{
+    position : absolute;
+    bottom : 0;
+    min-height: 10vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-width:100%
+}
+.nav-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+

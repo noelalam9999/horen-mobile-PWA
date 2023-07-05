@@ -5,10 +5,12 @@ import { Container } from '@mui/material'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
+    <Container maxWidth="lg" sx={{height:"100vh"}}>
     <Layout>
-      <Container maxWidth="sm" sx={{height:"100%"}}>
+      
         <Component {...pageProps} />
-      </Container>
+      
     </Layout>
+    </Container>
   )
 }

@@ -5,16 +5,15 @@ function TimeBracketButton(
     {
       option,
       setSelected,
-      selectedBracket
-
+      selected
     } : 
     { 
       option:string,
       setSelected:Dispatch<SetStateAction<string>>,
-      selectedBracket:String
+      selected:String
       }) {
   return (
-    <div className={`time-bracket-button details ${option===selectedBracket ? "-dark" : "-alge"} center`} onClick={()=>{setSelected(option)}}>
+    <div className={`time-bracket-button ${option===selected ? "-dark" : "-alge"} center`} onClick={()=>{setSelected(option)}}>
       {option}
     </div>
   )

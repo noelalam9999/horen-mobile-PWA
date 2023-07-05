@@ -1,28 +1,39 @@
 import React, { useState, useEffect } from 'react'
-import TimeBracketButton from './TimeBracketButton';
+import { Dispatch,SetStateAction } from 'react'
+import TimeBracketViewSelectButton from './TimeBracketViewSelectButton';
 
-function TimeBracketViewSelect() {
+function TimeBracketViewSelect({setSelected, selected}:{setSelected : Dispatch<SetStateAction<string>>, selected: string}) {
 
   const [options, setOptions] = useState<string[]>([""]);
-  const [selected, setSelected] = useState<string>("");
+
 
   useEffect(() => {
     setOptions([
-      "year",
-      "month",
+      "day",
       "week",
-      "day"
+      "month",
+      "year",   
     ])
+    setSelected("week")
     return () => {
       
     }
-  }, [])
+  }, []);
   
   return (
     <div className='flex overflow-x-scroll'>
-      {options.map((option:String, key)=>{
-        return <TimeBracketButton key={key} option={option} setSelected={setSelected}/>
-      })}
+      {
+          options.map((option:string, key)=>{
+            return (
+              <TimeBracketViewSelectButton 
+              key={key} 
+              option={option} 
+              setSelected={setSelected} 
+              selected={selected}/>
+              )
+            }
+          )
+        }
     </div>
     
   )

@@ -1,0 +1,65 @@
+.stats-card {
+    display: flex;
+    overflow: hidden;
+    margin: 1vh 0vw 0vh 1vh;
+    padding: 20px 6px 20px 6px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 150ms linear;
+    text-align: left;
+    white-space: wrap;
+    text-decoration: none !important;
+    text-transform: none;
+    text-transform: capitalize;
+    min-height:inherit;
+   
+    border: 0.12rem solid var(--color-dark);
+    border-radius: var(--borderRadius);
+  
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.3;
+  
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+   
+    justify-content: left;
+    align-items: center;
+    flex: 0 0 60px;
+    
+    box-shadow: 2px 5px 10px var(--color-smoke);
+  
+    &:hover {
+      transition: all 150ms linear;
+  
+      opacity: .85;
+    }
+    
+    
+    
+    &:focus {
+      outline: 1px dotted #959595;
+      outline-offset: -4px;
+    }
+    }
+
+.stats-container{
+    min-height: 60vh;
+}
+.points-acquired{
+    min-height:18vh;
+    max-width:100vw
+}
+.honking-behaviour{
+    max-width: 50vw;
+    min-height : 40vh
+}
+.honks-per-km{
+    max-width: 50vw;
+    min-height: 19vh;
+}
+.percentile{
+    max-width: 50vw;
+    min-height: 20vh;
+}
