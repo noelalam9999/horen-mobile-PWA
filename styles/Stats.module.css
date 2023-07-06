@@ -1,7 +1,7 @@
 .stats-card {
     display: flex;
     overflow: hidden;
-    margin: 1vh 0vw 0vh 1vh;
+    margin: 2vh 0vw 0vh 1vh;
     padding: 20px 6px 20px 6px;
     cursor: pointer;
     user-select: none;

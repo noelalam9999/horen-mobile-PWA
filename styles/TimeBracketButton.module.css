@@ -16,7 +16,7 @@
   display: flex;
   overflow: hidden;
 
-  margin: 3px;
+  margin: 7px 3px 7px 3px;
   padding: 20px 3px 20px 3px;
 
   cursor: pointer;
@@ -74,13 +74,12 @@
   }
 
   .time-bracket-button.-alge {
-    color: var(--color-dark);
-    background: var(--color-smoke);
+    background: rgba(255, 255, 255, 0.5 );
+  
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
     
-     &:focus {
-      outline: 1px dotted white;
-      outline-offset: -4px;
-    }
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
 
   .time-bracket-button.details {
